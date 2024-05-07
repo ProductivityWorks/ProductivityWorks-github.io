@@ -50,7 +50,7 @@
       }
     ],
     "imageResize": true,
-    "favicon": false,
+    "favicon": "@PROJECT_PATH@/assets/images/logo-productivity-works-black-transparent-128x128.png",
     "cssOptimize": true,
     "lazyLoad": true,
     "lazyType": "blur",
@@ -65,7 +65,7 @@
       "enabled": false
     },
     "gdpr": false,
-    "uniqCompNum": 128,
+    "uniqCompNum": 133,
     "versionPublish": "5.9.18",
     "screenshot": "screenshot.png",
     "witsec-white-label": true,
@@ -1246,6 +1246,54 @@
           "_params": {}
         },
         {
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": "<!-- Type valid HTML here -->\n\n<div>\n    <h1 class=\"display-1\">Custom HTML Block</h1>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"#777\" width=\"200\" height=\"200\"><path d=\"M6.1 8.7L2.8 12l3.3 3.3-1.4 1.4L0 12l4.7-4.7 1.4 1.4zm13.2-1.4l-1.4 1.4 3.3 3.3-3.3 3.3 1.4 1.4L24 12l-4.7-4.7zM8.1 18.6l1.8.8 6-14-1.8-.8-6 14z\"></path></svg>\n    <p class=\"display-3\">Click to Open Code Editor</p>\n</div>",
+          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 80px 0;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 60px;\n  color: #777;\n}",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_sourceTheme": "solutionm4",
+          "_anchor": "custom-html-3n"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background": "@bgColor",
+            "img": {
+              "width": "120px",
+              "margin": "auto"
+            },
+            ".card": {
+              "height": "fit-content",
+              "cursor": "pointer",
+              "padding": "1rem 0",
+              "margin-bottom": "1rem",
+              "img": {
+                "filter": "brightness(2)"
+              }
+            },
+            "@media (min-width: 992px)": {
+              ".card": {
+                "max-width": "20%"
+              }
+            }
+          },
+          "_name": "clients1",
+          "_sourceTheme": "solutionm4",
+          "_customHTML": "<section group=\"Clients\" class=\"clients1 solutionm4_clients1\">\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <header>Show/Hide</header>\n        <input type=\"range\" inline title=\"Items\" name=\"items\" min=\"1\" max=\"10\" value=\"1\" step=\"1\">\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <!-- End block parameters -->\n    <div class=\"container images-container\" mbr-class=\"{'container-fluid':fullWidth,container:fullWidth==false}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12\">\n                <h2 class=\"mbr-section-title mbr-semibold pb-3 mbr-white align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">Our Clients</h2>\n                <p class=\"mbr-text pb-5 align-center mbr-white mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                    Ut venenatis aliquam pellentesque. Phasellus a scelerisque augue non enim <br>etiam non enim varius,\n                    vehicula nisi interdum, molestie.</p>\n            </div>\n            <div class=\"col-md-3 card\" mbr-if=\"items > 0\">\n                <img src=\"@PROJECT_PATH@/assets/images/logo-productivity-works-black-transparent-128x128.png\" alt=\"PWLogo\">\n            </div>\n            <div class=\"col-md-3 card\" mbr-if=\"items > 1\">\n                <img src=\"../_images/clients/2.png\">\n            </div>\n            <div class=\"col-md-3 card\" mbr-if=\"items > 2\">\n                <img src=\"../_images/clients/3.png\">\n            </div>\n            <div class=\"col-md-3 card\" mbr-if=\"items > 3\">\n                <img src=\"../_images/clients/4.png\">\n            </div>\n            <div class=\"col-md-3 card\" mbr-if=\"items > 4\">\n                <img src=\"../_images/clients/5.png\">\n            </div>\n            <div class=\"col-md-3 card\" mbr-if=\"items > 5\">\n                <img src=\"../_images/clients/5.png\">\n            </div>\n            <div class=\"col-md-3 card\" mbr-if=\"items > 6\">\n                <img src=\"../_images/clients/4.png\">\n            </div>\n            <div class=\"col-md-3 card\" mbr-if=\"items > 7\">\n                <img src=\"../_images/clients/1.png\">\n            </div>\n            <div class=\"col-md-3 card\" mbr-if=\"items > 8\">\n                <img src=\"../_images/clients/2.png\">\n            </div>\n            <div class=\"col-md-3 card\" mbr-if=\"items > 9\">\n                <img src=\"../_images/clients/3.png\">\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "uc3FBZBhKt",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "clients1-3o"
+        },
+        {
           "alias": false,
           "_styles": {
             "padding-top": "(@paddingTop * 1rem)",
@@ -1371,7 +1419,7 @@
           },
           "_name": "footer1",
           "_sourceTheme": "parkm5",
-          "_customHTML": "<section class=\"footer1\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"range\" inline title=\"Menu Items\" name=\"menuItems\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Social Items\" name=\"socialItems\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <input type=\"checkbox\" title=\"Main\" name=\"showMain\" checked>\n        <input type=\"checkbox\" title=\"Copyright\" name=\"showCopyright\">\n        <input type=\"checkbox\" title=\"Border\" name=\"showBorder\">\n        <input type=\"color\" title=\"Color Border\" name=\"border\" value=\"#65676c\" condition=\"showBorder\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/parkm5/components/_images/background2.jpg\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"media-container-row mbr-white\" mbr-if=\"showMain\">\n            <div class=\"title-wrapper\">\n                <h4 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-4\" mbr-if=\"showTitle\">\n                    <b>Productivity Works</b><br><b>by</b><br><b>Vince Lopiccola</b></h4>\n            </div>\n            \n            \n            <div class=\"title-wrapper\">\n                <h4 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\">Customer experience visionary driving success of your end-to-end journey through service, support, and education.</h4>\n            </div>            \n            \n            \n            <div class=\"row row-links\" mbr-if=\"menuItems > 0\">\n                <ul class=\"foot-menu mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-list-grow=\"menuItems\" mbr-list data-app-selector=\".foot-menu\" data-multiline mbr-article>\n                    <li class=\"foot-menu-item mbr-fonts-style\" data-app-selector=\"foot-menu-item\"><a href=\"Solutions.html\" class=\"text-primary\">Solutions</a></li></ul>\n            </div>\n            <div class=\"row social-row\" mbr-if=\"socialItems > 0\">\n                <div mbr-list mbr-list-grow=\"socialItems\" class=\"social-list\">\n                    <div class=\"soc-item\">\n                        <a href=\"mailto:team@productivity.works\">\n                            <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social icon54-v2-email-app-1\" style=\"color: rgb(35, 35, 35); fill: rgb(35, 35, 35);\"></span>\n                        </a>\n                    </div>\n                    <div class=\"soc-item\">\n                        <a href=\"tel:+1-248-313-8883\">\n                            <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social icon54-v1-phone-intalk\" style=\"color: rgb(35, 35, 35); fill: rgb(35, 35, 35);\"></span>\n                        </a>\n                    </div>\n                    \n                    \n                    \n                    \n                <div class=\"soc-item\">\n                        <a href=\"https://www.linkedin.com/in/vincelopiccola/\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social icon54-v1-linkedin\" style=\"color: rgb(35, 35, 35); fill: rgb(35, 35, 35);\"></span>\n                        </a>\n                    </div></div>\n            </div>\n        </div>\n        <div class=\"copyright\" mbr-if=\"showCopyright\">\n            <p class=\"mbr-text mbr-fonts-style \" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                © <b>Copyright 2025 Mobirise.</b> All Rights Reserved.\n            </p>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"footer1\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"range\" inline title=\"Menu Items\" name=\"menuItems\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Social Items\" name=\"socialItems\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <input type=\"checkbox\" title=\"Main\" name=\"showMain\" checked>\n        <input type=\"checkbox\" title=\"Copyright\" name=\"showCopyright\">\n        <input type=\"checkbox\" title=\"Border\" name=\"showBorder\">\n        <input type=\"color\" title=\"Color Border\" name=\"border\" value=\"#65676c\" condition=\"showBorder\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/parkm5/components/_images/background2.jpg\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"media-container-row mbr-white\" mbr-if=\"showMain\">\n            <div class=\"title-wrapper\">\n                <h4 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-4\" mbr-if=\"showTitle\">\n                    <b>Productivity Works</b><br><b>by</b><br><b>Vince Lopiccola</b></h4>\n            </div>\n            \n            \n            <div class=\"title-wrapper\">\n                <h4 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\">Customer experience visionary driving success of your end-to-end journey through service, support, and education.</h4>\n            </div>            \n            \n            \n            <div class=\"row row-links\" mbr-if=\"menuItems > 0\">\n                <ul class=\"foot-menu mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-list-grow=\"menuItems\" mbr-list data-app-selector=\".foot-menu\" data-multiline mbr-article>\n                    <li class=\"foot-menu-item mbr-fonts-style\" data-app-selector=\"foot-menu-item\"><a href=\"Solutions.html\" class=\"text-primary\">Solutions</a></li></ul>\n            </div>\n            <div class=\"row social-row\" mbr-if=\"socialItems > 0\">\n                <div mbr-list mbr-list-grow=\"socialItems\" class=\"social-list\">\n                    <div class=\"soc-item\">\n                        <a href=\"mailto:team@productivity.works\">\n                            <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social icon54-v2-email-app-1\" style=\"color: rgb(35, 35, 35); fill: rgb(35, 35, 35);\"></span>\n                        </a>\n                    </div>\n                    <div class=\"soc-item\">\n                        <a href=\"tel:+1-248-313-8883\">\n                            <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social icon54-v1-phone-intalk\" style=\"color: rgb(35, 35, 35); fill: rgb(35, 35, 35);\"></span>\n                        </a>\n                    </div>\n                    \n                    \n                    \n                    \n                <div class=\"soc-item\">\n                        <a href=\"https://www.linkedin.com/in/vincelopiccola/\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social icon54-v1-linkedin\" style=\"color: rgb(35, 35, 35); fill: rgb(35, 35, 35);\"></span>\n                        </a>\n                    </div></div>\n            </div>\n        </div>\n        <div class=\"copyright\" mbr-if=\"showCopyright\">\n            <p class=\"mbr-text mbr-fonts-style \" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                © <b>Copyright 2025 Mobirise.</b> All Rights Reserved.\n            </p>\n        </div>\n    </div>\n</section>",
           "_cid": "twboLWMdSN",
           "_anchor": "footer",
           "_PHPplaceholders": [],

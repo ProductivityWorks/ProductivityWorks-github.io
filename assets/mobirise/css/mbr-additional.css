@@ -1724,8 +1724,31 @@ a {
 .cid-s7yPu3t6hj H3 {
   color: #999999;
 }
+.cid-uc3FBZBhKt {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background: #ffffff;
+}
+.cid-uc3FBZBhKt img {
+  width: 120px;
+  margin: auto;
+}
+.cid-uc3FBZBhKt .card {
+  height: fit-content;
+  cursor: pointer;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+.cid-uc3FBZBhKt .card img {
+  filter: brightness(2);
+}
+@media (min-width: 992px) {
+  .cid-uc3FBZBhKt .card {
+    max-width: 20%;
+  }
+}
 .cid-twboLWMdSN {
-  padding-top: 5rem;
+  padding-top: 0rem;
   padding-bottom: 5rem;
   background-color: #ffffff;
 }
